@@ -9,7 +9,7 @@ public class MD5Utils {
 	/**
 	 * 
 	 * @Title: MD5Utils.java
-	 * @Package com.imooc.utils
+	 * @Package com.kenny.utils
 	 * @Description: MD5 encryption for strings
 	 */
 	public static String getMD5Str(String strValue) throws Exception {
@@ -20,7 +20,7 @@ public class MD5Utils {
 
 	public static void main(String[] args) {
 		try {
-			String md5 = getMD5Str("imooc");
+			String md5 = getMD5Str("Kenny");
 			System.out.println(md5);
 		} catch (Exception e) {
 			e.printStackTrace();

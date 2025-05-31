@@ -9,20 +9,20 @@ import java.util.List;
 /**
  * 
  * @Title: JsonUtils.java
- * @Package com.imooc.utils
- * @Description: json转换类
+ * @Package com.kenny.utils
+ * @Description: JSON conversion utility class
  * Copyright: Copyright (c)
- * Company: www.imooc.com
+ * Company: www.kenny.com
  * 
- * @author imooc
+ * @author Kenny
  */
 public class JsonUtils {
 
-    // 定义jackson对象
+    // Define jackson object
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
     /**
-     * 将对象转换成json字符串。
+     * Convert object to JSON string
      * @param data
      * @return
      */
@@ -37,10 +37,10 @@ public class JsonUtils {
     }
     
     /**
-     * 将json结果集转化为对象
+     * Convert JSON result set to object
      * 
-     * @param jsonData json数据
-     * @param beanType 对象中的object类型
+     * @param jsonData JSON data
+     * @param beanType Object type in the class
      * @return
      */
     public static <T> T jsonToPojo(String jsonData, Class<T> beanType) {
@@ -54,7 +54,7 @@ public class JsonUtils {
     }
     
     /**
-     * 将json数据转换成pojo对象list
+     * Convert JSON data to POJO object list
      * @param jsonData
      * @param beanType
      * @return

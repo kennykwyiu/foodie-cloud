@@ -19,7 +19,7 @@ public class DesensitizationUtil {
         String mail = commonDisplay("admin@kenny.com");
         String mail1 = commonDisplay("ad@kenny.com");
         String mail2 = commonDisplay("wahtIsYourName@kenny.com");
-        String address = commonDisplay("北京大运河东路888号");
+        String address = commonDisplay("888 Grand Canal East Road, Beijing");
 
         System.out.println(name);
         System.out.println(mobile);
