@@ -2,6 +2,7 @@ package com.kenny.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -25,7 +26,8 @@ public class Swagger2 {
                     .apiInfo(apiInfo())                 // Used to define api document summary information
                     .select()
                     .apis(RequestHandlerSelectors
-                            .basePackage("com.kenny.controller"))   // Specify controller package
+                            .withClassAnnotation(RestController.class)) // Scan all classes annotated with @RestController
+//                            .basePackage("com.kenny.controller"))   // Specify controller package
                     .paths(PathSelectors.any())         // All controllers
                     .build();
     }
