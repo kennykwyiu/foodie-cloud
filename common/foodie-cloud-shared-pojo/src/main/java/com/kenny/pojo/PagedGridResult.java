@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 
  * @Title: PagedGridResult.java
- * @Package com.imooc.utils
+ * @Package com.kenny.utils
  * @Description: Used to return the data format for paginated Grid
  * Copyright: Copyright (c) 2019
  */
