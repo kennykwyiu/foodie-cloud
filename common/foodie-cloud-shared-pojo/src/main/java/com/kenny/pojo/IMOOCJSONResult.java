@@ -1,7 +1,7 @@
 package com.kenny.pojo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * 
@@ -24,7 +24,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class IMOOCJSONResult {
 
     // Define jackson object
-    private static final ObjectMapper MAPPER = new ObjectMapper();
+//    private static final ObjectMapper MAPPER = new ObjectMapper();
 
     // Response business status
     private Integer status;
