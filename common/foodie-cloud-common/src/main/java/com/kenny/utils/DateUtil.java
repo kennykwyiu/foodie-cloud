@@ -27,7 +27,7 @@ public class DateUtil {
     public static String DATE_PATTERN = "yyyyMMddHHmmss";
    
     /**
-     * 则个
+     * This one
      */
     private static boolean LENIENT_DATE = false;
 
