@@ -65,9 +65,9 @@ public interface ItemService {
      */
     @GetMapping("pagedComments")
     public PagedGridResult queryPagedComments(@RequestParam("itemId") String itemId, 
-                                            @RequestParam("level") Integer level,
-                                            @RequestParam("page") Integer page, 
-                                            @RequestParam("pageSize") Integer pageSize);
+                                            @RequestParam(value = "level", required = false) Integer level,
+                                            @RequestParam(value = "page", required = false) Integer page, 
+                                            @RequestParam(value = "pageSize", required = false) Integer pageSize);
 
     /**
      * Search items by keywords
