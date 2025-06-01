@@ -1,14 +1,14 @@
 package com.kenny.item.pojo.vo;
 
-import com.imooc.pojo.Items;
-import com.imooc.pojo.ItemsImg;
-import com.imooc.pojo.ItemsParam;
-import com.imooc.pojo.ItemsSpec;
+import com.kenny.pojo.Items;
+import com.kenny.pojo.ItemsImg;
+import com.kenny.pojo.ItemsParam;
+import com.kenny.pojo.ItemsSpec;
 
 import java.util.List;
 
 /**
- * 商品详情VO
+ * Item details VO
  */
 public class ItemInfoVO {
 

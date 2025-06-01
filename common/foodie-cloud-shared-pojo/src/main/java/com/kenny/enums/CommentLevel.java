@@ -1,12 +1,12 @@
 package com.kenny.enums;
 
 /**
- * @Desc: 商品评价等级 枚举
+ * @Desc: Item comment level enum
  */
 public enum CommentLevel {
-    GOOD(1, "好评"),
-    NORMAL(2, "中评"),
-    BAD(3, "差评");
+    GOOD(1, "Positive"),
+    NORMAL(2, "Neutral"),
+    BAD(3, "Negative");
 
     public final Integer type;
     public final String value;

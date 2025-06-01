@@ -1,15 +1,15 @@
 package com.kenny.enums;
 
 /**
- * @Description: 订单状态 枚举
+ * @Description: Order status enum
  */
 public enum OrderStatusEnum {
 
-	WAIT_PAY(10, "待付款"),
-	WAIT_DELIVER(20, "已付款，待发货"),
-	WAIT_RECEIVE(30, "已发货，待收货"),
-	SUCCESS(40, "交易成功"),
-	CLOSE(50, "交易关闭");
+	WAIT_PAY(10, "Pending payment"),
+	WAIT_DELIVER(20, "Paid, waiting for shipment"),
+	WAIT_RECEIVE(30, "Shipped, waiting for receipt"),
+	SUCCESS(40, "Transaction successful"),
+	CLOSE(50, "Transaction closed");
 
 	public final Integer type;
 	public final String value;

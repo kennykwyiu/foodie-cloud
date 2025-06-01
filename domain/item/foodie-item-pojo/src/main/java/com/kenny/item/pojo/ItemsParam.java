@@ -8,310 +8,310 @@ import java.util.Date;
 @Table(name = "items_param")
 public class ItemsParam {
     /**
-     * 商品参数id
+     * Item parameter id
      */
     @Id
     private String id;
 
     /**
-     * 商品外键id
+     * Item foreign key id
      */
     @Column(name = "item_id")
     private String itemId;
 
     /**
-     * 产地 产地，例：中国江苏
+     * Place of origin, e.g., Jiangsu, China
      */
     @Column(name = "produc_place")
     private String producPlace;
 
     /**
-     * 保质期 保质期，例：180天
+     * Shelf life, e.g., 180 days
      */
     @Column(name = "foot_period")
     private String footPeriod;
 
     /**
-     * 品牌名 品牌名，例：三只大灰狼
+     * Brand name, e.g., Three Big Wolves
      */
     private String brand;
 
     /**
-     * 生产厂名 生产厂名，例：大灰狼工厂
+     * Factory name, e.g., Big Wolf Factory
      */
     @Column(name = "factory_name")
     private String factoryName;
 
     /**
-     * 生产厂址 生产厂址，例：大灰狼生产基地
+     * Factory address, e.g., Big Wolf Production Base
      */
     @Column(name = "factory_address")
     private String factoryAddress;
 
     /**
-     * 包装方式 包装方式，例：袋装
+     * Packaging method, e.g., bagged
      */
     @Column(name = "packaging_method")
     private String packagingMethod;
 
     /**
-     * 规格重量 规格重量，例：35g
+     * Specification weight, e.g., 35g
      */
     private String weight;
 
     /**
-     * 存储方法 存储方法，例：常温5~25°
+     * Storage method, e.g., room temperature 5~25°
      */
     @Column(name = "storage_method")
     private String storageMethod;
 
     /**
-     * 食用方式 食用方式，例：开袋即食
+     * Consumption method, e.g., ready to eat
      */
     @Column(name = "eat_method")
     private String eatMethod;
 
     /**
-     * 创建时间
+     * Creation time
      */
     @Column(name = "created_time")
     private Date createdTime;
 
     /**
-     * 更新时间
+     * Update time
      */
     @Column(name = "updated_time")
     private Date updatedTime;
 
     /**
-     * 获取商品参数id
+     * Get item parameter id
      *
-     * @return id - 商品参数id
+     * @return id - Item parameter id
      */
     public String getId() {
         return id;
     }
 
     /**
-     * 设置商品参数id
+     * Set item parameter id
      *
-     * @param id 商品参数id
+     * @param id Item parameter id
      */
     public void setId(String id) {
         this.id = id;
     }
 
     /**
-     * 获取商品外键id
+     * Get item foreign key id
      *
-     * @return item_id - 商品外键id
+     * @return item_id - Item foreign key id
      */
     public String getItemId() {
         return itemId;
     }
 
     /**
-     * 设置商品外键id
+     * Set item foreign key id
      *
-     * @param itemId 商品外键id
+     * @param itemId Item foreign key id
      */
     public void setItemId(String itemId) {
         this.itemId = itemId;
     }
 
     /**
-     * 获取产地 产地，例：中国江苏
+     * Get place of origin
      *
-     * @return produc_place - 产地 产地，例：中国江苏
+     * @return produc_place - Place of origin, e.g., Jiangsu, China
      */
     public String getProducPlace() {
         return producPlace;
     }
 
     /**
-     * 设置产地 产地，例：中国江苏
+     * Set place of origin
      *
-     * @param producPlace 产地 产地，例：中国江苏
+     * @param producPlace Place of origin, e.g., Jiangsu, China
      */
     public void setProducPlace(String producPlace) {
         this.producPlace = producPlace;
     }
 
     /**
-     * 获取保质期 保质期，例：180天
+     * Get shelf life
      *
-     * @return foot_period - 保质期 保质期，例：180天
+     * @return foot_period - Shelf life, e.g., 180 days
      */
     public String getFootPeriod() {
         return footPeriod;
     }
 
     /**
-     * 设置保质期 保质期，例：180天
+     * Set shelf life
      *
-     * @param footPeriod 保质期 保质期，例：180天
+     * @param footPeriod Shelf life, e.g., 180 days
      */
     public void setFootPeriod(String footPeriod) {
         this.footPeriod = footPeriod;
     }
 
     /**
-     * 获取品牌名 品牌名，例：三只大灰狼
+     * Get brand name
      *
-     * @return brand - 品牌名 品牌名，例：三只大灰狼
+     * @return brand - Brand name, e.g., Three Big Wolves
      */
     public String getBrand() {
         return brand;
     }
 
     /**
-     * 设置品牌名 品牌名，例：三只大灰狼
+     * Set brand name
      *
-     * @param brand 品牌名 品牌名，例：三只大灰狼
+     * @param brand Brand name, e.g., Three Big Wolves
      */
     public void setBrand(String brand) {
         this.brand = brand;
     }
 
     /**
-     * 获取生产厂名 生产厂名，例：大灰狼工厂
+     * Get factory name
      *
-     * @return factory_name - 生产厂名 生产厂名，例：大灰狼工厂
+     * @return factory_name - Factory name, e.g., Big Wolf Factory
      */
     public String getFactoryName() {
         return factoryName;
     }
 
     /**
-     * 设置生产厂名 生产厂名，例：大灰狼工厂
+     * Set factory name
      *
-     * @param factoryName 生产厂名 生产厂名，例：大灰狼工厂
+     * @param factoryName Factory name, e.g., Big Wolf Factory
      */
     public void setFactoryName(String factoryName) {
         this.factoryName = factoryName;
     }
 
     /**
-     * 获取生产厂址 生产厂址，例：大灰狼生产基地
+     * Get factory address
      *
-     * @return factory_address - 生产厂址 生产厂址，例：大灰狼生产基地
+     * @return factory_address - Factory address, e.g., Big Wolf Production Base
      */
     public String getFactoryAddress() {
         return factoryAddress;
     }
 
     /**
-     * 设置生产厂址 生产厂址，例：大灰狼生产基地
+     * Set factory address
      *
-     * @param factoryAddress 生产厂址 生产厂址，例：大灰狼生产基地
+     * @param factoryAddress Factory address, e.g., Big Wolf Production Base
      */
     public void setFactoryAddress(String factoryAddress) {
         this.factoryAddress = factoryAddress;
     }
 
     /**
-     * 获取包装方式 包装方式，例：袋装
+     * Get packaging method
      *
-     * @return packaging_method - 包装方式 包装方式，例：袋装
+     * @return packaging_method - Packaging method, e.g., bagged
      */
     public String getPackagingMethod() {
         return packagingMethod;
     }
 
     /**
-     * 设置包装方式 包装方式，例：袋装
+     * Set packaging method
      *
-     * @param packagingMethod 包装方式 包装方式，例：袋装
+     * @param packagingMethod Packaging method, e.g., bagged
      */
     public void setPackagingMethod(String packagingMethod) {
         this.packagingMethod = packagingMethod;
     }
 
     /**
-     * 获取规格重量 规格重量，例：35g
+     * Get specification weight
      *
-     * @return weight - 规格重量 规格重量，例：35g
+     * @return weight - Specification weight, e.g., 35g
      */
     public String getWeight() {
         return weight;
     }
 
     /**
-     * 设置规格重量 规格重量，例：35g
+     * Set specification weight
      *
-     * @param weight 规格重量 规格重量，例：35g
+     * @param weight Specification weight, e.g., 35g
      */
     public void setWeight(String weight) {
         this.weight = weight;
     }
 
     /**
-     * 获取存储方法 存储方法，例：常温5~25°
+     * Get storage method
      *
-     * @return storage_method - 存储方法 存储方法，例：常温5~25°
+     * @return storage_method - Storage method, e.g., room temperature 5~25°
      */
     public String getStorageMethod() {
         return storageMethod;
     }
 
     /**
-     * 设置存储方法 存储方法，例：常温5~25°
+     * Set storage method
      *
-     * @param storageMethod 存储方法 存储方法，例：常温5~25°
+     * @param storageMethod Storage method, e.g., room temperature 5~25°
      */
     public void setStorageMethod(String storageMethod) {
         this.storageMethod = storageMethod;
     }
 
     /**
-     * 获取食用方式 食用方式，例：开袋即食
+     * Get consumption method
      *
-     * @return eat_method - 食用方式 食用方式，例：开袋即食
+     * @return eat_method - Consumption method, e.g., ready to eat
      */
     public String getEatMethod() {
         return eatMethod;
     }
 
     /**
-     * 设置食用方式 食用方式，例：开袋即食
+     * Set consumption method
      *
-     * @param eatMethod 食用方式 食用方式，例：开袋即食
+     * @param eatMethod Consumption method, e.g., ready to eat
      */
     public void setEatMethod(String eatMethod) {
         this.eatMethod = eatMethod;
     }
 
     /**
-     * 获取创建时间
+     * Get creation time
      *
-     * @return created_time - 创建时间
+     * @return created_time - Creation time
      */
     public Date getCreatedTime() {
         return createdTime;
     }
 
     /**
-     * 设置创建时间
+     * Set creation time
      *
-     * @param createdTime 创建时间
+     * @param createdTime Creation time
      */
     public void setCreatedTime(Date createdTime) {
         this.createdTime = createdTime;
     }
 
     /**
-     * 获取更新时间
+     * Get update time
      *
-     * @return updated_time - 更新时间
+     * @return updated_time - Update time
      */
     public Date getUpdatedTime() {
         return updatedTime;
     }
 
     /**
-     * 设置更新时间
+     * Set update time
      *
-     * @param updatedTime 更新时间
+     * @param updatedTime Update time
      */
     public void setUpdatedTime(Date updatedTime) {
         this.updatedTime = updatedTime;
