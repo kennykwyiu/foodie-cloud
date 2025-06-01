@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RequestMapping("item-comments-api")
-public interface ItemCommentService {
+public interface ItemCommentsService {
     /**
      * Query my comments with pagination
      * @param userId
