@@ -42,7 +42,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.5.4</version>
                 <configuration>
-                    <mainClass></mainClass>
+                    <mainClass>com.kenny.item.ItemApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
