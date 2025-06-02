@@ -1,0 +1,28 @@
+server:
+  port: 10001
+
+spring:
+  datasource:                                           # Data source configuration
+    url: jdbc:mysql://localhost:3306/foodie-cloud-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+#    url: jdbc:mysql://localhost:3306/foodie-shop-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    password: root
+  redis:
+    # Redis single instance
+    database: 0
+    host: 192.168.1.190
+    port: 6379
+    password: imooc
+    # Redis sentinel mode
+#    database: 1
+#    password: imooc
+#    sentinel:
+#      master: imooc-master
+#      nodes: 192.168.1.191:26379,192.168.1.192:26379,192.168.1.193:26379
+    # Redis cluster mode
+#    password: imooc
+#    cluster:
+#      nodes: 192.168.1.201:6379,192.168.1.202:6379,192.168.1.203:6379,192.168.1.204:6379,192.168.1.205:6379,192.168.1.206:6379
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
