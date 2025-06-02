@@ -1,9 +1,11 @@
 package com.kenny.item.pojo.vo;
 
-import com.kenny.pojo.Items;
-import com.kenny.pojo.ItemsImg;
-import com.kenny.pojo.ItemsParam;
-import com.kenny.pojo.ItemsSpec;
+
+
+import com.kenny.item.pojo.Items;
+import com.kenny.item.pojo.ItemsImg;
+import com.kenny.item.pojo.ItemsParam;
+import com.kenny.item.pojo.ItemsSpec;
 
 import java.util.List;
 
