@@ -1,11 +1,12 @@
 package com.kenny.user.service;
 
-
 import com.kenny.user.pojo.UserAddress;
 import com.kenny.user.pojo.bo.AddressBO;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RequestMapping("address-api")
 public interface AddressService {
 
     /**
@@ -13,33 +14,38 @@ public interface AddressService {
      * @param userId
      * @return
      */
-    public List<UserAddress> queryAll(String userId);
+    @GetMapping("addressList")
+    public List<UserAddress> queryAll(@RequestParam String userId);
 
     /**
      * Add new address for user
      * @param addressBO
      */
-    public void addNewUserAddress(AddressBO addressBO);
+    @PostMapping("address")
+    public void addNewUserAddress(@RequestBody AddressBO addressBO);
 
     /**
      * Update user's address
      * @param addressBO
      */
-    public void updateUserAddress(AddressBO addressBO);
+    @PutMapping("address")
+    public void updateUserAddress(@RequestBody AddressBO addressBO);
 
     /**
      * Delete user's address information by user ID and address ID
      * @param userId
      * @param addressId
      */
-    public void deleteUserAddress(String userId, String addressId);
+    @DeleteMapping("address")
+    public void deleteUserAddress(@RequestParam String userId, @RequestParam String addressId);
 
     /**
      * Update default address
      * @param userId
      * @param addressId
      */
-    public void updateUserAddressToBeDefault(String userId, String addressId);
+    @PostMapping("setDefaultAddress")
+    public void updateUserAddressToBeDefault(@RequestParam String userId, @RequestParam String addressId);
 
     /**
      * Query specific user address object information by user ID and address ID
@@ -47,5 +53,6 @@ public interface AddressService {
      * @param addressId
      * @return
      */
-    public UserAddress queryUserAddres(String userId, String addressId);
+    @GetMapping("queryAddress")
+    public UserAddress queryUserAddres(@RequestParam String userId, @RequestParam(required = false) String addressId);
 }
