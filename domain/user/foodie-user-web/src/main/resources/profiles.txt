@@ -1,0 +1,19 @@
+Profiles multi-environment configuration overview:
+1. Data source configuration
+    1.1 Modify url according to your situation to localhost or internal network IP (for cluster or distributed systems, must use internal network IP)
+    1.2 Change password 'root' to your own password
+2. MyBatis log printing
+    dev  can print
+    test can print
+    prod no need to print
+3. Image storage directory and image service request path configuration
+    /workspaces/images/foodie/faces
+    http://api.z.mukewang.com:8088/foodie-dev-api/foodie/faces
+4. Callback address from payment center to backend service
+    http://api.z.mukewang.com:8088/foodie-dev-api/orders/notifyMerchantOrderPaid
+
+Packaging methods:
+1. jar
+    Service-oriented concept, when working with Spring Cloud, all services are packaged as jar files
+2. war
+    Application concept, can also provide services and interfaces externally
