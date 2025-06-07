@@ -3,7 +3,7 @@ package com.kenny.user.controller;
 import com.kenny.controller.BaseController;
 import com.kenny.pojo.IMOOCJSONResult;
 import com.kenny.user.pojo.Users;
-import com.kenny.user.pojo.bo.ShopcartBO;
+import com.kenny.pojo.ShopcartBO;
 import com.kenny.user.pojo.bo.UserBO;
 import com.kenny.user.service.UserService;
 import com.kenny.utils.*;

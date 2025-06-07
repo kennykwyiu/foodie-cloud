@@ -1,4 +1,4 @@
-package com.kenny.user.pojo.bo;
+package com.kenny.pojo;
 
 public class ShopcartBO {
 
