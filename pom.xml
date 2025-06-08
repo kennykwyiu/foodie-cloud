@@ -26,6 +26,7 @@
         <module>domain/user/foodie-user-web</module>
         <module>domain/cart/foodie-cart-api</module>
         <module>domain/cart/foodie-cart-service</module>
+        <module>domain/cart/foodie-cart-web</module>
     </modules>
 
     <dependencyManagement>
